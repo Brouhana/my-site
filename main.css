@@ -64,3 +64,10 @@ a:hover {
 	display: block;
 	margin-top: 5px
 }
+.links.links-page ul.nav li:last-child {
+  display: inline-block;
+}
+
+.links.links-page {
+  margin-bottom: 40px;
+}
