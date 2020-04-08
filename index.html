@@ -4,9 +4,16 @@
     <title>Brennan J. Rouhana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/main.css">
-    <style>
-      
-    </style>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <script>
+      jQuery(document).ready(function( $ ) {
+  $('.video-selector iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
+    </script>
   </head>
   <body>
       <iframe src="https://www.youtube.com/embed/b9w82XGX6o8?start=92?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" onload="this.width=screen.width;this.height=screen.height;" allowfullscreen></iframe>
